@@ -22,16 +22,11 @@ function App() {
     padding: '20px'
   };
 
-  const imageStyle = {
-    width: '100px',
-    height: '100px'
-  };
-
   return (
     <>
       <div style={containerStyle}>
         {countries.map((country) => (
-          <div key={country.abbr} style={imageStyle}>
+          <div key={country.abbr} className="imageStyle">
             <img src={country.flag} alt={country.name} />
             <h2>{country.name}</h2>
           </div>
